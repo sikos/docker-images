@@ -6,7 +6,7 @@
 
 copy_reference_files() {
   local log="$MAVEN_CONFIG/copy_reference_file.log"
-  local ref="/usr/share/maven/ref"
+  local ref="/opt/maven"
 
   if mkdir -p "${MAVEN_CONFIG}/repository" && touch "${log}" > /dev/null 2>&1 ; then
       cd "${ref}"
